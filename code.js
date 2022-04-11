@@ -8,3 +8,7 @@ function sayHello(name){
         return "Hello, " + name;
     } else return "Hello, World!"
 }
+
+function isFive(number){
+    return number == 5;
+}
