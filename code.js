@@ -16,3 +16,9 @@ function isFive(number){
 function isEven(number){
     return number % 2 === 0;
 }
+
+function isVowel(input){
+    if (typeof input === 'string'){
+    return input.toLowerCase() === ("a" || "e" || "i" || "o" || "u");
+    } else return false;
+}
