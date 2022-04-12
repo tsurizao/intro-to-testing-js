@@ -4,9 +4,7 @@ const helloWorld = function() {
 }
 
 function sayHello(name){
-    if(typeof name === "string") {
-        return "Hello, " + name;
-    } else return "Hello, World!"
+    return typeof name === "string" ? "Hello, " + name : "Hello, World!";
 }
 
 function isFive(number){
@@ -18,13 +16,9 @@ function isEven(number){
 }
 
 function isVowel(input){
-    if (typeof input === 'string'){
-    return input.toLowerCase() === ("a" || "e" || "i" || "o" || "u");
-    } else return false;
+    return typeof input === 'string' && input.toLowerCase() === ("a" || "e" || "i" || "o" || "u");
 }
 
 function add(input1, input2){
-    if (isNaN(input1) || isNaN(input2)){
-        return NaN;
-    } else return (parseFloat(input1)) + (parseFloat(input2));
+    return (parseFloat(input1)) + (parseFloat(input2));
 }
