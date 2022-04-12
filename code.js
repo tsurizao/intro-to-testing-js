@@ -24,10 +24,7 @@ function isVowel(input){
 }
 
 function add(input1, input2){
-    if (isNaN(input1)){
-        return parseFloat(input1);
-    } else if (isNaN(input2)){
-        return parseFloat(input2)
+    if (isNaN(input1) || isNaN(input2)){
+        return NaN;
     } else return (parseFloat(input1)) + (parseFloat(input2));
-
 }
