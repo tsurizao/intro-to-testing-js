@@ -112,4 +112,27 @@ describe('isVowel', function (){
     it('should return false when called with isVowel()', function () {
         expect(isVowel()).toBe(false);
     });
-})
+});
+describe('add', function(){
+    it('should be defined as a function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should add(2,3) and return 5', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should add(-3, -9) and return -12', function () {
+        expect(add(-3, -9)).toBe(-12)
+    });
+    it('should add("5", 6) and return 11', function () {
+        expect(add("5", 6)).toBe(11)
+    });
+    it('should add("-4", "10") and return 6', function () {
+        expect(add("-4", "10")).toBe(6)
+    });
+    it('should add("banana", "split") and return NaN', function () {
+        expect(add("banana", "split")).toBe(NaN);
+    });
+    it('should add(2, "apples" and return NaN', function () {
+        expect(add(2, "apples")).toBe(NaN);
+    });
+});

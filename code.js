@@ -22,3 +22,12 @@ function isVowel(input){
     return input.toLowerCase() === ("a" || "e" || "i" || "o" || "u");
     } else return false;
 }
+
+function add(input1, input2){
+    if (isNaN(input1)){
+        return parseFloat(input1);
+    } else if (isNaN(input2)){
+        return parseFloat(input2)
+    } else return (parseFloat(input1)) + (parseFloat(input2));
+
+}
